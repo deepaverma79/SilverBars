@@ -20,7 +20,7 @@ public class ObjectControllerTest {
 		Assert.assertTrue(orderController.cancelOrder(ord.get().getOrderId()));
 	}
 	
-//	@Test
+	@Test
 	public void testActiveOrderSummary() {
 		OrderController orderController = new OrderController();
 		Order ord1 = orderController.registerOrder("USER1", 3.5, 306, OrderType.SELL).get();
